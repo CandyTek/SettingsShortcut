@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<application
+		android:label="快捷方式"
+		tools:ignore="MissingApplicationIcon">
+		<activity
+			android:name=".BaseActivity"
+			android:exported="true"
+			android:label=".开发者选项"
+			android:theme="@android:style/Theme.NoDisplay">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<meta-data
+				android:name="action"
+				android:value="android.settings.APPLICATION_DEVELOPMENT_SETTINGS" />
+		</activity>
+		<activity
+			android:name=".MainActivity1"
+			android:exported="true"
+			android:label=".无障碍服务"
+			android:theme="@android:style/Theme.NoDisplay"
+			tools:ignore="DuplicateActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<meta-data
+				android:name="action"
+				android:value="android.settings.ACCESSIBILITY_SETTINGS" />
+		</activity>
+		
+		<activity
+			android:name=".MainActivity2"
+			android:exported="true"
+			android:label=".语言选择"
+			android:theme="@android:style/Theme.NoDisplay"
+			tools:ignore="DuplicateActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<meta-data
+				android:name="action"
+				android:value="android.settings.LOCALE_SETTINGS" />
+		</activity>
+		
+		<activity
+			android:name=".MainActivity3"
+			android:exported="true"
+			android:label=".所有应用"
+			android:theme="@android:style/Theme.NoDisplay"
+			tools:ignore="DuplicateActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<meta-data
+				android:name="action"
+				android:value="android.settings.MANAGE_ALL_APPLICATIONS_SETTINGS" />
+		</activity>
+		
+		<activity
+			android:name=".MainActivity4"
+			android:exported="true"
+			android:label=".允许修改系统设置"
+			android:theme="@android:style/Theme.NoDisplay"
+			tools:ignore="DuplicateActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<meta-data
+				android:name="action"
+				android:value="android.settings.action.MANAGE_WRITE_SETTINGS" />
+		</activity>
+		
+		<activity
+			android:name=".MainActivity5"
+			android:exported="true"
+			android:label=".悬浮窗设置"
+			android:theme="@android:style/Theme.NoDisplay"
+			tools:ignore="DuplicateActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<meta-data
+				android:name="action"
+				android:value="android.settings.action.MANAGE_OVERLAY_PERMISSION" />
+		</activity>
+		
+		<activity
+			android:name=".MainActivity01"
+			android:exported="true"
+			android:label=".热点配置"
+			android:theme="@android:style/Theme.NoDisplay"
+			tools:ignore="DuplicateActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>

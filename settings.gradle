@@ -1,0 +1,18 @@
+pluginManagement {
+	repositories {
+		google()
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+dependencyResolutionManagement {
+	repositories {
+		google()
+		//noinspection JcenterRepositoryObsolete
+		jcenter()
+		mavenCentral()
+		maven { url "https://jitpack.io" }
+	}
+}
+rootProject.name = "BlankApplication"
+include ':app'
