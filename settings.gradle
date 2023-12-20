@@ -8,11 +8,9 @@ pluginManagement {
 dependencyResolutionManagement {
 	repositories {
 		google()
-		//noinspection JcenterRepositoryObsolete
-		jcenter()
 		mavenCentral()
 		maven { url "https://jitpack.io" }
 	}
 }
-rootProject.name = "BlankApplication"
+rootProject.name = "OpenDevTool"
 include ':app'

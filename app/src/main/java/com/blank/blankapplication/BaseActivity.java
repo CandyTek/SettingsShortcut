@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.provider.Settings;
 
 public class BaseActivity extends Activity {
 
@@ -24,10 +23,6 @@ public class BaseActivity extends Activity {
 			startActivity(intent);
 		} catch (PackageManager.NameNotFoundException ignored) {}
 		finish();
-		// Settings.ACTION_ACCESSIBILITY_SETTINGS
-		// Settings.ACTION_LOCALE_SETTINGS
-		// Settings.ACTION_SETTINGS
-		// Settings.ACTION_MANAGE_WRITE_SETTINGS
-		Settings.ACTION_MANAGE_OVERLAY_PERMISSION
+		System.exit(0);
 	}
 }

@@ -12,7 +12,9 @@ public class MainActivity01 extends Activity {
 		super.onCreate(savedInstanceState);
 		Intent intent = new Intent();
 		intent.setComponent(new ComponentName("com.android.settings", "com.android.settings.TetherSettings"));
+		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		startActivity(intent);
 		finish();
+		System.exit(0);
 	}
 }

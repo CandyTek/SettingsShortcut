@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceScreen android:title="开发者选项">
+		<intent
+			android:targetClass="com.blank.blankapplication.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="无障碍服务">
+		<intent
+			android:targetClass="com.blank.blankapplication.MainActivity1"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="语言选择">
+		<intent
+			android:targetClass="com.blank.blankapplication.MainActivity2"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="所有应用">
+		<intent
+			android:targetClass="com.blank.blankapplication.MainActivity3"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="允许修改系统设置">
+		<intent
+			android:targetClass="com.blank.blankapplication.MainActivity4"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="悬浮窗设置">
+		<intent
+			android:targetClass="com.blank.blankapplication.MainActivity5"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="忽略电池优化">
+		<intent
+			android:targetClass="com.blank.blankapplication.MainActivity6"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="热点配置">
+		<intent
+			android:targetClass="com.blank.blankapplication.MainActivity01"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+
+
+</PreferenceScreen>
