@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-	namespace 'com.blank.blankapplication'
+	namespace 'com.xiaoming.opendevtool'
 	compileSdk 34
 
 	defaultConfig {
@@ -11,7 +11,7 @@ android {
 		minSdk 9
 		targetSdk 34
 		versionCode 1
-		versionName "1"
+		versionName "1.2"
 	}
 
 	buildTypes {

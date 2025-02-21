@@ -1,4 +1,4 @@
-package com.blank.blankapplication;
+package com.xiaoming.opendevtool;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -14,7 +14,6 @@ public class MainActivity01 extends Activity {
 		intent.setComponent(new ComponentName("com.android.settings", "com.android.settings.TetherSettings"));
 		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		startActivity(intent);
-		finish();
-		System.exit(0);
+		MainTools.exitApp(this);
 	}
 }

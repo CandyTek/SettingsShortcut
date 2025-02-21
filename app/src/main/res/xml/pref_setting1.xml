@@ -2,44 +2,107 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 	<PreferenceScreen android:title="开发者选项">
 		<intent
-			android:targetClass="com.blank.blankapplication.BaseActivity"
+			android:data="android.settings.APPLICATION_DEVELOPMENT_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
 			android:targetPackage="com.xiaoming.opendevtool" />
 	</PreferenceScreen>
+
+	<PreferenceCategory android:title="权限相关" />
 	<PreferenceScreen android:title="无障碍服务">
 		<intent
-			android:targetClass="com.blank.blankapplication.MainActivity1"
-			android:targetPackage="com.xiaoming.opendevtool" />
-	</PreferenceScreen>
-	<PreferenceScreen android:title="语言选择">
-		<intent
-			android:targetClass="com.blank.blankapplication.MainActivity2"
-			android:targetPackage="com.xiaoming.opendevtool" />
-	</PreferenceScreen>
-	<PreferenceScreen android:title="所有应用">
-		<intent
-			android:targetClass="com.blank.blankapplication.MainActivity3"
+			android:data="android.settings.ACCESSIBILITY_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
 			android:targetPackage="com.xiaoming.opendevtool" />
 	</PreferenceScreen>
 	<PreferenceScreen android:title="允许修改系统设置">
 		<intent
-			android:targetClass="com.blank.blankapplication.MainActivity4"
+			android:data="android.settings.action.MANAGE_WRITE_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
 			android:targetPackage="com.xiaoming.opendevtool" />
 	</PreferenceScreen>
-	<PreferenceScreen android:title="悬浮窗设置">
+	<PreferenceScreen android:title="悬浮窗权限">
 		<intent
-			android:targetClass="com.blank.blankapplication.MainActivity5"
+			android:data="android.settings.action.MANAGE_OVERLAY_PERMISSION"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
 			android:targetPackage="com.xiaoming.opendevtool" />
 	</PreferenceScreen>
 	<PreferenceScreen android:title="忽略电池优化">
 		<intent
-			android:targetClass="com.blank.blankapplication.MainActivity6"
+			android:data="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceCategory android:title="网络相关" />
+	<PreferenceScreen android:title="所有网络">
+		<intent
+			android:data="android.settings.WIRELESS_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="查看 WIFI">
+		<intent
+			android:data="android.settings.WIFI_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
 			android:targetPackage="com.xiaoming.opendevtool" />
 	</PreferenceScreen>
 	<PreferenceScreen android:title="热点配置">
 		<intent
-			android:targetClass="com.blank.blankapplication.MainActivity01"
+			android:targetClass="com.xiaoming.opendevtool.MainActivity01"
 			android:targetPackage="com.xiaoming.opendevtool" />
 	</PreferenceScreen>
 
+	<PreferenceCategory android:title="默认" />
+	<PreferenceScreen android:title="主屏幕应用">
+		<intent
+			android:data="android.settings.HOME_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="默认应用">
+		<intent
+			android:data="android.settings.MANAGE_DEFAULT_APPS_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="WebView 内核">
+		<intent
+			android:data="android.settings.WEBVIEW_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="语言选择">
+		<intent
+			android:data="android.settings.LOCALE_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+
+
+	<PreferenceCategory android:title="其他" />
+
+	<PreferenceScreen android:title="所有应用管理">
+		<intent
+			android:data="android.settings.MANAGE_ALL_APPLICATIONS_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="声音">
+		<intent
+			android:data="android.settings.SOUND_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="储存空间">
+		<intent
+			android:data="android.settings.INTERNAL_STORAGE_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
+	<PreferenceScreen android:title="关于设备">
+		<intent
+			android:data="android.settings.DEVICE_INFO_SETTINGS"
+			android:targetClass="com.xiaoming.opendevtool.BaseActivity"
+			android:targetPackage="com.xiaoming.opendevtool" />
+	</PreferenceScreen>
 
 </PreferenceScreen>
